@@ -1,0 +1,49 @@
+.wrapp-item {
+    width: 100%;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+
+.product-card button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #27ae60;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #219150;
+}

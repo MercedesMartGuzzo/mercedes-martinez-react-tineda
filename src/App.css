@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, ul, li{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
