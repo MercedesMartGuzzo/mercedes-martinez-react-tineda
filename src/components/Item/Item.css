@@ -19,7 +19,9 @@
 .product-card img {
     border-radius: 8px;
     margin-bottom: 1rem;
+    width: 100%;
 }
+
 
 .product-card h3 {
     font-size: 1.2rem;

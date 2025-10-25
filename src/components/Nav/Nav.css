@@ -1,12 +1,29 @@
-.navbar{
+.wrapp-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+   
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 2rem 1rem
-;
+    ;
+
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -15,7 +32,7 @@
 }
 
 
-.navbar ul li{
+.navbar ul li {
     list-style: none;
     font-size: 18px;
     font-weight: 500;
