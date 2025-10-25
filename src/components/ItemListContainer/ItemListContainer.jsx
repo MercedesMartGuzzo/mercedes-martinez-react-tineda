@@ -5,8 +5,7 @@ import ItemList from '../ItemList/ItemList'
 export default function ItemListContainer() {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(`${import.meta.env.BASE_URL}data/products.json`)
-
+        fetch('/data/products.json')
             .then(res => {
                 if (!res.ok) {
                     throw new Error('No se pueden caragar los productos');
