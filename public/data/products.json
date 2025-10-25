@@ -4,7 +4,7 @@
         "name": "Cactus",
         "price": 10.99,
         "description": "Planta fácil de cuidar y resistente al sol.",
-        "image": "/images/cactus.jpeg",
+        "image": "images/cactus.jpeg",
         "stock": 5,
         "category": "suculentas"
     },
@@ -13,7 +13,7 @@
         "name": "Suculenta",
         "price": 12.50,
         "description": "Perfecta para interiores, necesita poca agua.",
-        "image": "/images/sucukenta.jpeg",
+        "image": "images/sucukenta.jpeg",
         "stock": 8,
         "category": "suculentas"
 
@@ -23,7 +23,7 @@
         "name": "Helecho",
         "price": 8.00,
         "description": "Ideal para dar frescura a tu hogar.",
-        "image": "/images/helecho.jpeg",
+        "image": "images/helecho.jpeg",
         "stock": 10,
         "category": "varios"
     },
@@ -32,7 +32,7 @@
         "name": "Bonsai",
         "price": 25.00,
         "description": "Requiere cuidados especiales, perfecto para decorar.",
-        "image": "/images/bonsai.jpeg",
+        "image": "images/bonsai.jpeg",
         "stock": 3,
         "category": "varios"
     },
@@ -41,7 +41,7 @@
         "name": "Orquídea",
         "price": 15.00,
         "description": "Flor delicada que ilumina cualquier espacio.",
-        "image": "/images/orquidia.jpeg",
+        "image": "images/orquidia.jpeg",
         "stock": 6,
         "category": "varios"
     }
