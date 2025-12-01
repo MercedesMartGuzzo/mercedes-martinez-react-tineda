@@ -1,0 +1,23 @@
+.session-form{
+    margin-top: 4rem;
+    display: flex;  
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+.admin-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.login-btn{
+    padding: 10px 15px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}

@@ -1,27 +1,35 @@
-import { useState, useEffect } from 'react'
-import './ItemListContainer.css'
-import ItemList from '../ItemList/ItemList'
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';   // <-- agregado
+import './ItemListContainer.css';
+import ItemList from '../ItemList/ItemList';
+import { getProducts } from '../../services/products';
 
 export default function ItemListContainer() {
-    const [products, setProducts] = useState([])
-    const [selectedCategory, setSelectedCategory] = useState('todos')
+    const [products, setProducts] = useState([]);
+
+    const { categoryId } = useParams();  // <-- toma la categoría desde la URL
+
+    const [selectedCategory, setSelectedCategory] = useState(categoryId || 'todos');
 
     useEffect(() => {
-        fetch('/data/products.json')
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error('No se pueden cargar los productos')
-                }
-                return res.json()
-            })
+        getProducts()
             .then(data => setProducts(data))
-            .catch(err => console.log(err))
-    }, [])
+            .catch(err => console.log(err));
+    }, []);
+
+    // actualizar el select cuando cambia la ruta
+    useEffect(() => {
+        if (categoryId) {
+            setSelectedCategory(categoryId);
+        } else {
+            setSelectedCategory('todos');
+        }
+    }, [categoryId]);
 
     const filteredProducts =
         selectedCategory === 'todos'
             ? products
-            : products.filter(p => p.category === selectedCategory)
+            : products.filter(p => p.category === selectedCategory);
 
     return (
         <section className="itemlist-container">
@@ -44,5 +52,5 @@ export default function ItemListContainer() {
                 <ItemList list={filteredProducts} />
             </div>
         </section>
-    )
+    );
 }
